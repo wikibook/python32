@@ -1,0 +1,18 @@
+<table border=0>
+{% for item in searchList %}
+<tr>	
+	<td>
+    <font size=3 face="arial">
+      <a href="{{ item.link }}" target="_blank">
+       {{item.title|safe}}
+      </a>
+    </font>
+    <br>
+    {{ item.preview|safe }}
+  </td>
+</tr>
+<tr>
+ 	 <td>&nbsp;</td>
+</tr>
+{% endfor %}
+</table>

@@ -1,0 +1,18 @@
+<?xml version="1.0" ?>
+<booklist cnt="3">
+ <book ISBN="0399250395">
+       <title>The Very Hungry Caterpillar Pop-Up Book</title>
+       <author name="Eric Carle"/>
+ <author name="Keith Finch"/>
+ <publisher> Philomel Books</publisher>
+ <description> Celebrating the 40th anniverary of one of the most popular children's books ever created</description>
+ </book>
+ <book ISBN="0964729237">
+    <title lang="english">The Shack</title>
+ </book>
+ <book ISBN="0553281097">
+    <title>You Can Negotiate Anything</title>
+    <author name="Herb Cohen"/>
+    <category cid="12">Negotiate and narrative skill</category>
+ </book>
+</booklist>

@@ -1,0 +1,2 @@
+apple	orange	banana	bus
+Apple is very delicious.

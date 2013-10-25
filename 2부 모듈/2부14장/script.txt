@@ -1,0 +1,3 @@
+CREATE TABLE PhoneBook(Name text, PhoneNum text);
+INSERT INTO PhoneBook VALUES('Derick', '010-1234-5678');
+INSERT INTO PhoneBook VALUES('Sangjung', '010-5670-2343');

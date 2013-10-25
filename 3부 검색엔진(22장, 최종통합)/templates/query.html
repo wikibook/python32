@@ -1,0 +1,30 @@
+<script type="text/javascript">
+function req_search(mode) {
+    var q = document.getElementById('q_id')
+
+    if (q.value.length <= 0 ) {
+        alert("please, enter keyword")
+        return false
+    } else {
+        if (q.value.indexOf(" ") > 0) {
+            alert("please,input one word")
+            return false;
+        }
+    }
+    if (mode == "")
+        mode = "extAll"
+
+    strURL = "/search/" + mode + "/" + q.value
+    window.location = strURL
+
+}
+</script>
+
+<input type="text" name="q" id="q_id" value="{{keyword}}"OnKeyDown="if(event.keyCode==13) javascript:req_search('exAll')"/>
+<input type="button" value="Search" onClick="javascript:req_search('exAll')"/>
+<br><br>
+<font size=-1>
+<a href="#" onClick="req_search('extAll')">exact all</a>&nbsp;<a href="#" onClick="req_search('preAll')">prefix all</a>
+&nbsp;<a href="#" onClick="req_search('extCon')">exact content</a>&nbsp;<a href="#" onClick="req_search('preCon')">prefix content</a>
+</font>
+</form>
